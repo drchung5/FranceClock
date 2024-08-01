@@ -24,7 +24,7 @@ class TimeViewModel : ViewModel() {
 
         val date = Date()
 
-        val dateFormat = SimpleDateFormat("EEE H:mm a", Locale.getDefault())
+        val dateFormat = SimpleDateFormat("EEE h:mm a", Locale.US)
         _localTime.value = dateFormat.format(date)
 
         Log.wtf("TIME", _localTime.value.toString())
