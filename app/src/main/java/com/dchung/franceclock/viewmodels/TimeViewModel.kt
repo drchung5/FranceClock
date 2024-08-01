@@ -22,7 +22,7 @@ class TimeViewModel : ViewModel() {
 
     fun updateTimes() {
 
-        var date = Date()
+        val date = Date()
 
         val dateFormat = SimpleDateFormat("EEE H:mm a", Locale.getDefault())
         _localTime.value = dateFormat.format(date)
