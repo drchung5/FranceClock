@@ -39,3 +39,4 @@ class TimeViewModel : ViewModel() {
         _pacificTime.value = dateFormat.format(date)
     }
 }
+
